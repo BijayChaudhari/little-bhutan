@@ -1,7 +1,71 @@
 {% extends "base.html" %}
-{% load static %}
-{% block title %}Little Bhutan{% endblock title %}
-{% block index %}
+ {% load static %}
+  {% block title %}Little Bhutan{%endblock title %} 
+  {% block content %}
+<section class="container mx-auto pt-5">
+  <nav class="flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="{% static 'img/logo.png' %}" class="max-w-20" />
+      <h1 class="font-bold text-2xl text-gray-900">
+        Bhutan <span class="text-blue-900">Little</span>
+      </h1>
+    </div>
+    <div>
+      <ul class="flex space-x-10 text-gray-500">
+        <div><a class="hover:to-black" href="#">Discover</a></div>
+        <div><a class="hover:to-black" href="#">Destination</a></div>
+        <div><a class="hover:to-black" href="#">About Us</a></div>
+      </ul>
+    </div>
+    <div>
+      <a class="bg-orange-300 rounded-2xl px-4 py-2" href="#">Register</a>
+    </div>
+  </nav>
+</section>
+<!-- nav section ends here -->
+
+<!-- hero section starts here -->
+<section class="container flex justify-between mx-auto mt-60 relative">
+  <div>
+    <div>
+      <h1 class="font-bold text-7xl text-gray-900 leading-snug">
+        <span class="text-8xl">Explore </span> <br />
+        BHUTAN <span>&#8594;</span>
+      </h1>
+
+      <p class="text-gray-500 max-w-sm mt-6">
+        Let's spend your money and relieve your stress by going around the
+        mountains of Bhutan, there is samll part of heraven on earth
+      </p>
+    </div>
+    <div class="flex space-x-10 mt-12">
+      <div>
+        <a
+          class="bg-orange-500 rounded-2xl px-4 py-2 text-white drop-shadow-2xl"
+          href="#"
+          >Go Exploration</a
+        >
+      </div>
+      <div><a class="text-gray-800" href="#">Get a Price</a></div>
+    </div>
+  </div>
+  <div class="relative">
+    <img src="{% static "img/Travelers.png" %}" alt="" class=" h-auto max-w-xl absolute right-0  bottom-[-5%]" >
+    <div class="bg-white drop-shadow-2xl max-w-16">
+        <img src="{% static "img/logo.png" %}" alt="">
+        <h1>Bhutan is very amaxing, I enjoyed my honeymoon here</h1>
+        <p>Fatisma</p>
+    </div>
+</div>
 
 
-{% endblock index %}
+</section>
+<!-- hero section end here  -->
+
+{% comment %} card section starts here {% endcomment %}
+<section>
+    <div>
+
+    </div>
+</section>
+{% endblock content %}
