@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %} 
 {% block title %}Little Bhutan{%endblock title %} 
+
 {% block content %}
 <section class="container mx-auto pt-5">
   <nav class="flex justify-between items-center">
@@ -49,8 +50,17 @@
       <div><a class="text-gray-800" href="#">Get a Price</a></div>
     </div>
   </div>
-  <div >
+  <div class="relative">
     <img src="{% static "img/girl.png" %}" alt="" class=" h-auto max-w-60 bottom-0" >
+    <div class="inner_circle"></div>
+    <div class="outer_circle"></div>
+    <div class="small_circle"></div>
+
+    <div class="emoji">
+      <img src="{% static "img/logo.png" %}" alt="">
+    </div>
+    
+
     <div class="bg-white drop-shadow-2xl border rounded-2xl max-w-52">
       <div class="p-5 flex items-center relative">
         <div>
