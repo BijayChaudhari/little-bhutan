@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<section class="blog m-9">
+    <h1 class="text-black w-[75%] border-b-2 border-red-900 block text-center mx-auto mt-3 font-extrabold">Blogs</h1>
+    <div class="container block sm:flex m-2 border-[2px]">
+        <div class="blog-img block">
+            <img src="{% static 'img/buddha.jpg' %}" alt="budhha stupa">
+        </div>
+        <div class="blog-text mx-4 text-justify font-[16px]">
+            <p>BhutanBhutan and neighbouring Tibet experienced the spread of Buddhism, which originated in the Indian subcontinent during the lifetime of Gautama Buddha. In the first millennium, the Vajrayana school of Buddhism spread to Bhutan from the southern Pala Empire of Bengal. During the 16th century, Ngawang Namgyal unified the valleys of Bhutan into a single state. Namgyal defeated three Tibetan invasions, subjugated rival religious schools, codified the Tsa Yig legal system, and established a government of theocratic and civil administrators. Namgyal became the first Zhabdrung Rinpoche and his successors acted as the spiritual leaders of Bhutan, like the Dalai Lama in Tibet.</p>
+        </div>
+    </div>
+    <div class="container block sm:flex m-2 border-[2px]">
+        <div class="blog-img block">
+            <img src="{% static 'img/buddha.jpg' %}" alt="budhha stupa">
+        </div>
+        <div class="blog-text mx-4 text-justify font-[16px]">
+            <p>BhutanBhutan and neighbouring Tibet experienced the spread of Buddhism, which originated in the Indian subcontinent during the lifetime of Gautama Buddha. In the first millennium, the Vajrayana school of Buddhism spread to Bhutan from the southern Pala Empire of Bengal. During the 16th century, Ngawang Namgyal unified the valleys of Bhutan into a single state. Namgyal defeated three Tibetan invasions, subjugated rival religious schools, codified the Tsa Yig legal system, and established a government of theocratic and civil administrators. Namgyal became the first Zhabdrung Rinpoche and his successors acted as the spiritual leaders of Bhutan, like the Dalai Lama in Tibet.</p>
+        </div>
+    </div>
+</section>
+{% endblock content %}

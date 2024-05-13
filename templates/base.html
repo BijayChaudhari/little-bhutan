@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
+</head>
+<body>
+    {% include "header.html" %}
     {% block content %}
 
-    {% endblock %} {% include 'footer.html' %}
-  </body>
+    {% endblock content %}
+{% include "footer.html" %}
+<script type="module" src="{% static 'js/index.js' %}"></script>
+</body>
 </html>
