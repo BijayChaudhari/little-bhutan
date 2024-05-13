@@ -67,6 +67,7 @@
     border-radius: 100%;
     border-bottom-left-radius: 4px;
 }
+<<<<<<< Updated upstream
 .hamburger {
     cursor: pointer;
 }
@@ -79,4 +80,10 @@
 /* Style for the menu when it's open */
 .menu.open {
     display: block;
+=======
+@media(max-width:760){
+    .hero{
+        display: block;
+    }
+>>>>>>> Stashed changes
 }
