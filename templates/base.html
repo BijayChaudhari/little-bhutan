@@ -2,21 +2,20 @@
 
 <!DOCTYPE html>
 <html lang="en" class="text-[16px]">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon" />
     <title>Little Bhutan</title>
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  </head>
+  <body>
     {% block content %}
 
-    {% endblock content %}
-{% include "footer.html" %}
-</body>
+    {% endblock %} {% include 'footer.html' %}
+  </body>
 </html>

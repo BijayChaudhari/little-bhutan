@@ -3,34 +3,40 @@
 {% block title %}Little Bhutan{%endblock title %} 
 
 {% block content %}
-<section class="container mx-auto pt-5">
+<section class="container mx-auto pt-5 px-4 md:px-0">
   <nav class=" navbar flex justify-between items-center">
     <div class="logo flex items-center">
-      <img src="{% static 'img/logo.png' %}" class="max-w-16" />
-      <h1 class="font-bold text-2xl text-gray-900">
+      <img src="{% static 'img/logo.png' %}" class=" max-w-11 sm:max-w-16" />
+      <h1 class="font-bold text:xl sm:text-2xl text-gray-900">
         Bhutan <span class="text-blue-900">Easy</span>
       </h1>
     </div>
     <div calss="nav-menus">
-      <ul class="flex space-x-10 text-gray-500">
+      <ul class="space-x-10 text-gray-500 hidden sm:flex">
         <div><a class="hover:to-black" href="#">Discover</a></div>
         <div><a class="hover:to-black" href="#">Destination</a></div>
         <div><a class="hover:to-black" href="#">About Us</a></div>
       </ul>
     </div>
-    <div class="register">
+    <div class="register hidden sm:flex">
       <a class="bg-orange-300 rounded-2xl px-4 py-2" href="#">Register</a>
     </div>
   </nav>
 </section>
+<div class="div">
+  <div>
+    <div class="col-md-7"></div>
+    <div class="col-ms-5"></div>
+  </div>
+</div>
 <!-- nav section ends here -->
 
 <!-- hero section starts here -->
-<section class="container mx-auto grid md:grid-cols-2 sm:grid-cols-1 mt-40">
+<section class="px-4 sm:px-0  container mx-auto grid grid-cols-1 md:grid-cols-2 mt-32">
   <div class="hero-text-part">
     <div class="hero-text-section">
-      <h1 class="font-bold text-7xl text-gray-900 leading-snug">
-        <span class="text-8xl">Explore </span> <br />
+      <h1 class="font-bold text-4xl sm:text-7xl text-gray-900 leading-snug">
+        <span class="text-5xl sm:text-8xl">Explore </span> <br />
         BHUTAN <span>&#8594;</span>
       </h1>
 
@@ -50,8 +56,8 @@
       <div class="hero-button-two"><a class="text-gray-800" href="#">Get a Price</a></div>
     </div>
   </div>
-  <div class="hero-img-part flex justify-center items-center relativ ">
-    <img src="{% static "img/girl.png" %}" alt="" class=" h-auto max-w-60" >
+  <div class="hero-img-part flex justify-center items-center relativ">
+    <img src="{% static "img/girl.png" %}" alt="" class=" girl-photo h-auto max-w-60" >
     <div class="relative">
     <div class="circle-design absolute ">
       <div class="inner_circle absolute"></div>
@@ -84,7 +90,7 @@
 <!-- hero section end here  -->
 
 {% comment %} card section starts here {% endcomment %}
-<section class="container grid grid-cols-3 mx-auto mt-20 ">
+<section class=" temple-cards container items-center sm:grid sm:grid-cols-3 mx-auto px-4">
     <div class="card-one rounded-2xl relative">
         <img src="{% static "img/buddha.jpg" %}" alt="buddha" class="h-96 max-w-72 rounded-2xl">
         <div class="card-text bg-white pt-2 pl-3 pr-32 absolute -bottom-6 left-5 rounded-2xl">
@@ -93,7 +99,7 @@
             <h2 class="text-gray-600 -mt-0"><span class=" text-orange-600">&#9733;</span>5.0 Ratings</h2>
         </div>
     </div>
-    <div class="card-two rounded-2xl relative">
+    <div class="card-two rounded-2xl relative mt-12 sm:mt-0">
         <img src="{% static "img/temple.png" %}" alt="buddha" class="h-96 max-w-72 rounded-2xl">
         <div class="card-text bg-white pt-2 pl-3 pr-32 absolute -bottom-6 left-5 rounded-2xl">
             <p class="text-gray-600 text-sm">Trustworthy Rating:</p>
@@ -102,7 +108,7 @@
         </div>
     </div>
     
-  <div class="best-of-week-card">
+  <div class="best-of-week-card mt-16 md:mt-0">
     <h1 class="text-3xl">Best of the week</h1>
     <p class="text-gray-600 text-sm mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, perferendis optio inventore quas laboriosam ex molestias provident Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugiat ipsam earum excepturi fuga, similique qui! Nobis ratione modi, incidunt aperiam et voluptatem veniam doloremque sit nisi quia ad quos?</p>
     <div class="numbers flex justify-between mt-20">
@@ -127,7 +133,7 @@
 {% comment %} card section ends here {% endcomment %}
 
 {% comment %} freatured properties  section strats here  {% endcomment %}
-<section class="container mx-auto mt-20 bg-[#e6d590] p-10 rounded-2xl">
+<section class=" container mx-auto mt-20 bg-[#e6d590] p-10 rounded-2xl">
     <h1 class="font-bold text-gray-900 text-2xl my-3">Featured Properties</h1>
 <div class ="featured-tags text-gray-900 font-bold mb-5">
     <h1 class="inline-block mr-3 border-b border-dotted"><span>✅</span> We Match Price</h1>
@@ -141,8 +147,8 @@
     <h1 class="text-gray-900 py-1 px-3 drop-shadow-lg bg-white rounded-2xl">Tongsa</h1>
     <h1 class="text-gray-900 py-1 px-3 drop-shadow-lg bg-white rounded-2xl">Damphu</h1>
 </div>
-<div class="featured-hotels grid grid-col-4 gap-2 mt-5">
-  <div class="hotel bg-white drop-shadow-xl rounded-2xl max-w-64">
+<div class="featured-hotels grid grid-cols-4 mt-5">
+  <div class="hotel bg-white drop-shadow-xl rounded-2xl max-w-64 ">
     <img src="{% static "img/hotel1.jpg" %}" alt="hotel1" class="h-auto max-w-64 rounded-t-2xl">
     <h1 class="font-bold p-3">Six Senses Thimphu - FREE Airport Shuttle <span class=" text-orange-600">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h1>
     <h2 class="px-3 text-gray-900 text-sm"><span class = "text-white bg-blue-950 p-1 rounded ">4.1/5</span> 392 Reviews</h2>
@@ -173,7 +179,7 @@
 {% comment %} freatured properties ended here  {% endcomment %}
 
 {% comment %} featured post section strats here  {% endcomment %}
-<section class="container mx-auto mt-16">
+<section class=" container mx-auto mt-16">
     <h1 class="font-bold text-3xl text-gray-900 my-11 text-center">Recent Blogs</h1>
     <div class="grid grid-cols-3 gap-3">
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
