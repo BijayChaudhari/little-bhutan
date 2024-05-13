@@ -3,34 +3,39 @@
 {% block title %}Little Bhutan{%endblock title %} 
 
 {% block content %}
-<section class="container mx-auto pt-5">
-  <nav class=" navbar flex justify-between items-center">
-    <div class="logo flex items-center">
-      <img src="{% static 'img/logo.png' %}" class="max-w-16" />
+<<<<<<< Updated upstream
+
+=======
+<section class="container mx-auto  hero pt-5">
+  <nav class="flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="{% static 'img/logo.png' %}" class="max-w-20" />
       <h1 class="font-bold text-2xl text-gray-900">
-        Bhutan <span class="text-blue-900">Easy</span>
+        Bhutan <span class="text-blue-900">Little</span>
       </h1>
     </div>
-    <div calss="nav-menus">
-      <ul class="flex space-x-10 text-gray-500">
+    <div>
+      <ul class="flex space-x-10 text-gray-500 sm:">
         <div><a class="hover:to-black" href="#">Discover</a></div>
         <div><a class="hover:to-black" href="#">Destination</a></div>
         <div><a class="hover:to-black" href="#">About Us</a></div>
       </ul>
     </div>
-    <div class="register">
+    <div>
       <a class="bg-orange-300 rounded-2xl px-4 py-2" href="#">Register</a>
     </div>
   </nav>
 </section>
 <!-- nav section ends here -->
+>>>>>>> Stashed changes
 
 <!-- hero section starts here -->
 <section class="container mx-auto grid md:grid-cols-2 sm:grid-cols-1 mt-40">
   <div class="hero-text-part">
     <div class="hero-text-section">
       <h1 class="font-bold text-7xl text-gray-900 leading-snug">
-        <span class="text-8xl">Explore </span> <br />
+        <span class="text-8xl">Explore </span> 
+        <br />
         BHUTAN <span>&#8594;</span>
       </h1>
 
@@ -50,8 +55,9 @@
       <div class="hero-button-two"><a class="text-gray-800" href="#">Get a Price</a></div>
     </div>
   </div>
-  <div class="hero-img-part flex justify-center items-center relativ ">
-    <img src="{% static "img/girl.png" %}" alt="" class=" h-auto max-w-60" >
+<<<<<<< Updated upstream
+  <div class="hero-img-part block sm:flex justify-center items-center relativ ">
+    <div><img src="{% static "img/girl.png" %}" alt="" class=" h-auto max-w-60" ></div>
     <div class="relative">
     <div class="circle-design absolute ">
       <div class="inner_circle absolute"></div>
@@ -61,6 +67,21 @@
       <div class="green_circle-one absolute"></div>
       <div class="green_circle-two absolute"></div>
     </div>
+
+    <div class="emoji">
+      <img src="{% static "img/logo.png" %}" alt="logo">
+=======
+  <div class="relative md:shrink-0 ">
+    <img src="{% static "img/girl.png" %}" alt="traveller-img" class=" h-auto max-w-60 bottom-0" >
+    <div class="inner_circle"></div>
+    <div class="outer_circle"></div>
+    <div class="small_circle"></div>
+
+    <div class="emoji">
+      <img src="{% static "img/logo.png" %}" alt="logo">
+    </div>
+    
+>>>>>>> Stashed changes
 
     <div class="emoji-design absolute">
       <h1>😍</h1>
@@ -74,7 +95,11 @@
         </div>
         <div class="text-gray-600 text-xs w-48">
           <h1>Bhutan is very amazing, I enjoyed my honeymoon here</h1>
+<<<<<<< Updated upstream
           <p class="mt-2">Fatisma💝</p>
+=======
+          <p>Fatima</p>
+>>>>>>> Stashed changes
         </div>
       </div>
     </div> 
@@ -84,7 +109,7 @@
 <!-- hero section end here  -->
 
 {% comment %} card section starts here {% endcomment %}
-<section class="container grid grid-cols-3 mx-auto mt-20 ">
+<section class="container grid sm:grid-cols-3 grid-cols-1 mx-auto mt-20 ">
     <div class="card-one rounded-2xl relative">
         <img src="{% static "img/buddha.jpg" %}" alt="buddha" class="h-96 max-w-72 rounded-2xl">
         <div class="card-text bg-white pt-2 pl-3 pr-32 absolute -bottom-6 left-5 rounded-2xl">
