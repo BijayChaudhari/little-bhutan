@@ -3,34 +3,6 @@
 {% block title %}Little Bhutan{%endblock title %} 
 
 {% block content %}
-<section class="container mx-auto pt-5 px-4 md:px-0">
-  <nav class=" navbar flex justify-between items-center">
-    <div class="logo flex items-center">
-      <img src="{% static 'img/logo.png' %}" class=" max-w-11 sm:max-w-16" />
-      <h1 class="font-bold text:xl sm:text-2xl text-gray-900">
-        Bhutan <span class="text-blue-900">Easy</span>
-      </h1>
-    </div>
-    <div calss="nav-menus">
-      <ul class="space-x-10 text-gray-500 hidden sm:flex">
-        <div><a class="hover:to-black" href="#">Discover</a></div>
-        <div><a class="hover:to-black" href="#">Destination</a></div>
-        <div><a class="hover:to-black" href="#">About Us</a></div>
-      </ul>
-    </div>
-    <div class="register hidden sm:flex">
-      <a class="bg-orange-300 rounded-2xl px-4 py-2" href="#">Register</a>
-    </div>
-  </nav>
-</section>
-<div class="div">
-  <div>
-    <div class="col-md-7"></div>
-    <div class="col-ms-5"></div>
-  </div>
-</div>
-<!-- nav section ends here -->
-
 <!-- hero section starts here -->
 <section class="px-4 sm:px-0  container mx-auto grid grid-cols-1 md:grid-cols-2 mt-32">
   <div class="hero-text-part">
@@ -147,7 +119,7 @@
     <h1 class="text-gray-900 py-1 px-3 drop-shadow-lg bg-white rounded-2xl">Tongsa</h1>
     <h1 class="text-gray-900 py-1 px-3 drop-shadow-lg bg-white rounded-2xl">Damphu</h1>
 </div>
-<div class="featured-hotels grid grid-cols-4 mt-5">
+<div class="featured-hotels grid sm:grid-cols-4 mt-5">
   <div class="hotel bg-white drop-shadow-xl rounded-2xl max-w-64 ">
     <img src="{% static "img/hotel1.jpg" %}" alt="hotel1" class="h-auto max-w-64 rounded-t-2xl">
     <h1 class="font-bold p-3">Six Senses Thimphu - FREE Airport Shuttle <span class=" text-orange-600">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h1>
