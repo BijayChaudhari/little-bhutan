@@ -4,7 +4,7 @@
 
 {% block content %}
 <!-- hero section starts here -->
-<section class="px-4 sm:px-0  container mx-auto grid grid-cols-1 md:grid-cols-2 mt-12 sm:mt-32 lg:mt-52">
+<section class="px-4 sm:px-0  container mx-auto grid grid-cols-1 md:grid-cols-2 mt-12 sm:mt-32 lg:mt-42">
     <div class="hero-text-part">
         <div class="hero-text-section">
             <h1 class="font-bold text-4xl sm:text-7xl text-gray-900 leading-snug">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="text-gray-600 text-xs w-48">
                         <h1>Bhutan is very amazing, I enjoyed my honeymoon here</h1>
-                        <p class="mt-2">Fatisma💝</p>
+                        <p class="mt-2">Fatima💝</p>
                     </div>
                 </div>
             </div>
@@ -108,9 +108,10 @@
 {% comment %} card section ends here {% endcomment %}
 
 {% comment %} freatured properties section strats here {% endcomment %}
-<section class=" container mx-auto mt-20 pb-14 bg-slate-50 p-10 rounded-2xl">
-    <h1 class="font-bold text-gray-900 text-2xl mb-3">Top Deals</h1>
-    <div class="featured-cities flex flex-wrap gap-3 mb-10">
+<section class="features container mx-auto mt-16 ">
+    <h1 class="font-bold text-3xl text-gray-900 my-11 text-center">Top Deals</h1>
+    <div class="container mx-auto mt-5 pb-14 bg-slate-50 p-10 rounded-2xl">
+    <div class="featured-cities flex flex-wrap gap-4 mb-10">
         <h1 class="text-white py-1 px-3 drop-shadow-lg rounded-2xl bg-gray-900">Thimphu</h1>
         <h1 class="text-gray-900 py-1 px-3 drop-shadow-lg bg-white rounded-2xl">Baga</h1>
         <h1 class="text-gray-900 py-1 px-3 drop-shadow-lg bg-white rounded-2xl">Mongar</h1>
@@ -120,45 +121,38 @@
     <div class="featured-hotels grid sm:grid-cols-4 mt-5 gap-4">
         <div class="hotel bg-white drop-shadow-xl rounded-2xl  ">
             <img src="{% static "img/hotel1.jpg" %}" alt="hotel1" class="h-auto  rounded-t-2xl">
-            <h1 class="font-bold p-3">Six Senses Thimphu - FREE Airport Shuttle <span
-                    class=" text-orange-600">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h1>
-            <h2 class="px-3 text-gray-900 text-sm"><span class="text-white bg-blue-950 p-1 relative rounded">4.1/5</span> 392
-                Reviews</h2>
+            <h1 class="font-bold p-3">Six Senses Thimphu - FREE Airport Shuttle 
             <h2 class="p-3 text-end text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 50
                 </span>
                 <h2>
         </div>
         <div class="hotel bg-white drop-shadow-xl rounded-2xl ">
             <img src="{% static "img/hotel2.jpg" %}" alt="hotel2" class="h-auto  rounded-t-2xl">
-            <h1 class="font-bold p-3">Como Uma Paro - FREE Airport Shuttle <span
-                    class=" text-orange-600">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h1>
-            <h2 class="px-3 text-gray-900 text-sm"><span class="text-white bg-blue-950 p-1 rounded ">4.0/5</span> 392
-                Reviews</h2>
+            <h1 class="font-bold p-3">Como Uma Paro - FREE Airport Shuttle 
             <h2 class="p-3 text-end text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 51
                 </span>
             </h2>
         </div>
         <div class="hotel bg-white drop-shadow-xl rounded-2xl ">
             <img src="{% static "img/hotel3.jpg" %}" alt="hotel3" class="h-auto  rounded-t-2xl">
-            <h1 class="font-bold p-3">Amankora Paro Lodge - FREE Airport Shuttle <span
+            <h1 class="font-bold p-3">Amankora Paro Lodge - FREE Airport Shuttle 
+               <!-- <span
                     class=" text-orange-600">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h1>
             <h2 class="px-3 text-gray-900 text-sm"><span class="text-white bg-blue-950 p-1 rounded ">4.5/5</span> 392
                 Reviews</h2>
+                -->
             <h2 class="p-3 text-end text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 52
                 </span>
             </h2>
         </div>
         <div class="hotel bg-white drop-shadow-xl rounded-2xl ">
             <img src="{% static "img/hotel3.jpg" %}" alt="hotel3" class="h-auto  rounded-t-2xl">
-            <h1 class="font-bold p-3">Amankora Paro Lodge - FREE Airport Shuttle <span
-                    class=" text-orange-600">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h1>
-            <h2 class="px-3 text-gray-900 text-sm"><span class="text-white bg-blue-950 p-1 rounded ">4.5/5</span> 392
-                Reviews</h2>
+            <h1 class="font-bold p-3">Amankora Paro Lodge - FREE Airport Shuttle </h1>
             <h2 class="p-3 text-end text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 52
                 </span>
             </h2>
         </div>
-
+    </div>
 </section>
 
 {% comment %} freatured properties ended here {% endcomment %}
@@ -166,7 +160,24 @@
 {% comment %} featured post section strats here {% endcomment %}
 <section class="container mx-auto mt-16">
     <h1 class="font-bold text-3xl text-gray-900 my-11 text-center">Recent Blogs</h1>
-    <div class="sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    <div class="sm:grid sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="{% static "img/buddha.jpg" %}" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                        technology acquisitions 2021</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    acquisitions of 2021 so far, in reverse chronological order.</p>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more<span>&#8594;</span>
+                </a>
+            </div>
+        </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
                 <img class="rounded-t-lg" src="{% static "img/buddha.jpg" %}" alt="" />
