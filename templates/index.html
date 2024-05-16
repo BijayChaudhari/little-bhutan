@@ -8,7 +8,7 @@
     <div class="hero-text-part">
         <div class="hero-text-section">
             <h1 class="font-bold text-4xl sm:text-7xl text-gray-900 leading-snug">
-                <span class="text-5xl sm:text-8xl">Explore </span> <br />
+                <span class="text-5xl sm:text-8xl">EXPLORE</span> <br />
                 BHUTAN <span>&#8594;</span>
             </h1>
 
@@ -47,7 +47,7 @@
                         <img src="{% static "img/logo.png" %}" alt=""
                             class="max-w-8 mr-3 absolute bg-white border-2 border-green-700 rounded-full p-1 top-[-13px]">
                     </div>
-                    <div class="text-gray-600 text-xs w-48">
+                    <div class="text-gray-600 text-xs w-48 hidden sm:block">
                         <h1>Bhutan is very amazing, I enjoyed my honeymoon here</h1>
                         <p class="mt-2">Fatima💝</p>
                     </div>
@@ -61,15 +61,15 @@
 {% comment %} card section starts here {% endcomment %}
 <section class=" temple-cards container items-center lg:grid lg:grid-cols-2 mx-auto px-4 mt-20 gap-12">
     <div class="sm:grid sm:grid-cols-2 gap-8">
-        <div class="card-one rounded-2xl relative mb-16 sm:mb-0">
+        <div class="card-one rounded-2xl hidden sm:block relative mb-16 sm:mb-0">
             <img src="{% static "img/buddha.jpg" %}" alt="buddha" class="w-full h-96  rounded-2xl">
-            <div class="card-text bg-white py-4 pl-3 pr-32 absolute -bottom-12 left-5 rounded-2xl w-[90%] shadow">
+            <div class="card-text bg-white m-auto py-4 pl-3 pr-32 absolute -bottom-12 left-5 rounded-2xl w-[90%] shadow">
                 <p class="text-gray-600 text-sm">Google Rating:</p>
                 <h2 class="font-bold ">Buddha Stupa</h2>
                 <h2 class="text-gray-600 -mt-0"><span class=" text-orange-600">&#9733;</span>5.0 Ratings</h2>
             </div>
         </div>
-        <div class="card-two rounded-2xl relative mb-16 sm:mb-0"">
+        <div class="card-two rounded-2xl hidden sm:block relative mb-16 sm:mb-0"">
             <img src="{% static "img/buddha.jpg" %}" alt="buddha" class="w-full h-96  rounded-2xl">
             <div class="card-text bg-white py-4 pl-3 pr-32 absolute -bottom-12 left-5 rounded-2xl w-[90%] shadow">
                 <p class="text-gray-600 text-sm">Google Rating:</p>
@@ -78,8 +78,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="best-of-week-card mt-16 md:mt-0 ">
         <h1 class="text-3xl">Best of the week</h1>
         <p class="text-gray-600 text-sm mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, perferendis
@@ -100,16 +98,17 @@
                 <p class="text-sm text-gray-600">Hotels</p>
             </div>
         </div>
-        <div class="find-place bg-gray-950 text-white rounded-2xl px-6 py-3 max-w-fit mt-10">
-            Find a Place
-        </div>
+        <button type="button"
+        class="text-white bg-orange-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg mt-10 text-sm px-4 py-2 text-center">
+        Find More..
+      </button>
     </div>
 </section>
 {% comment %} card section ends here {% endcomment %}
 
 {% comment %} freatured properties section strats here {% endcomment %}
 <section class="features container mx-auto mt-16 ">
-    <h1 class="font-bold text-3xl text-gray-900 my-11 text-center">Top Deals</h1>
+    <h1 class="font-bold text-3xl text-gray-900 my-11 text-left">Top Deals</h1>
     <div class="container mx-auto mt-5 pb-14 bg-slate-50 p-10 rounded-2xl">
     <div class="featured-cities flex flex-wrap gap-4 mb-10">
         <h1 class="text-white py-1 px-3 drop-shadow-lg rounded-2xl bg-gray-900">Thimphu</h1>
@@ -118,7 +117,7 @@
         <h1 class="text-gray-900 py-1 px-3 drop-shadow-lg bg-white rounded-2xl">Tongsa</h1>
         <h1 class="text-gray-900 py-1 px-3 drop-shadow-lg bg-white rounded-2xl">Damphu</h1>
     </div>
-    <div class="featured-hotels grid sm:grid-cols-4 mt-5 gap-4">
+    <div class="featured-hotels grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 gap-4">
         <div class="hotel bg-white drop-shadow-xl rounded-2xl  ">
             <img src="{% static "img/hotel1.jpg" %}" alt="hotel1" class="h-auto  rounded-t-2xl">
             <h1 class="font-bold p-3">Six Senses Thimphu - FREE Airport Shuttle 
@@ -159,9 +158,9 @@
 
 {% comment %} featured post section strats here {% endcomment %}
 <section class="container mx-auto mt-16">
-    <h1 class="font-bold text-3xl text-gray-900 my-11 text-center">Recent Blogs</h1>
+    <h1 class="font-bold text-3xl text-gray-900 my-11 text-left">Recent Blogs</h1>
     <div class="sm:grid sm:grid-cols-3 lg:grid-cols-4 gap-4">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="mb-4 mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow">
             <a href="#">
                 <img class="rounded-t-lg" src="{% static "img/buddha.jpg" %}" alt="" />
             </a>
@@ -178,7 +177,7 @@
                 </a>
             </div>
         </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="mb-4 mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
             <a href="#">
                 <img class="rounded-t-lg" src="{% static "img/buddha.jpg" %}" alt="" />
             </a>
@@ -196,7 +195,7 @@
             </div>
         </div>
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="mb-4 mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow">
             <a href="#">
                 <img class="rounded-t-lg" src="{% static "img/temple.png" %}" alt="" />
             </a>
@@ -214,7 +213,7 @@
             </div>
         </div>
 
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="mb-4 mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
             <a href="#">
                 <img class="rounded-t-lg" src="{% static "img/buddha.jpg" %}" alt="" />
             </a>
