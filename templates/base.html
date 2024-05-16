@@ -18,7 +18,11 @@
     {% block content %}
 
     {% endblock content %}
-{% include "footer.html" %}
-<script type="module" src="{% static 'js/index.js' %}"></script>
+    {% include "footer.html" %}
+
+    <!-- Script Started -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="{% static 'js/index.js' %}"></script>
+    <!-- Script End -->
 </body>
 </html>
