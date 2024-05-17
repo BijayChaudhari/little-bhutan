@@ -159,3 +159,22 @@ body .btn_effect:after {
 body .btn_effect:hover:after{
     content: "\f054";
 }
+
+.background_shape{
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    top:-10px;
+}
+
+.herotext:hover .herotext-span{
+    transform: translateX(10px);
+    display: inline-block;
+    color: rgb(234 88 12 / 1);
+}
+
+@media (min-width: 1536px) {
+    body .container {
+        max-width: 1280px;
+    }
+}
