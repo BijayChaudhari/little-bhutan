@@ -12,3 +12,7 @@ def blogs(request):
 def destinations(request):
     return render(request,'destination.html')
 
+def single(request):
+    return render(request,'single.html')
+
+
