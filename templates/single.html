@@ -1,29 +1,29 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-  <section class="single-destination-page">
-    <div class="container mx-auto">
-      <h1 class="font-bold text-gray-900 text-3xl py-6">Bhutan: 5 days tour in Paro, Thimpu, and Punakha</h1>
-      <div class="destination-img grid grid-cols-3 gap-x-4">
-        <div class="image1 col-span-2 ">
-          <img src="{% static 'img/Paro-Dzong.jpg' %}" alt="paro" class=" w-full h-96 rounded-xl object-center"/>
-        </div>
-        <div class="image2 grid">
-          <div class="image-2a">
-            <img src="{% static "img/tiger.jpg" %}" alt="" class="w-full h-44 rounded-xl object-cover">
-          </div>
-          <div class="image-2b">
-            <img src="{% static "img/monastry.jpg" %}" alt="" class="w-full h-48 rounded-xl object-cover">
-
-          </div>
-        </div>
-      </div>
+    <section class="single-destination-page">
+        <div class="container mx-auto">
+            <h1 class="font-bold text-gray-900 text-3xl py-6">Bhutan: 5 days tour in Paro, Thimpu, and Punakha</h1>
+            <div class="destination-img grid grid-cols-3 gap-x-4">
+                <div class="image1 col-span-2 ">
+                    <img src="{% static 'img/Paro-Dzong.jpg' %}" alt="paro"
+                         class=" w-full h-96 rounded-xl object-center"/>
+                </div>
+                <div class="image2 grid">
+                    <div class="image-2a mb-4">
+                        <img src="{% static "img/tiger.jpg" %}" alt="" class="w-full h-44 rounded-xl object-cover">
+                    </div>
+                    <div class="image-2b">
+                        <img src="{% static "img/monastry.jpg" %}" alt="" class="w-full h-48 rounded-xl object-cover">
+                    </div>
+                </div>
+            </div>
 
             <div class="destination-details mt-6">
                 <h2 class="font-bold text-xl text-gray-900 pb-6 gap-4">Details</h2>
 
-                <div class="details-content grid grid-cols-3 gap-8">
-                    <div class="single_contents col-span-2">
+                <div class="details-content flex gap-8">
+                    <div class="single_contents w-[75%]">
                         <div class="main_content">
                             <p>Experience the unbelievable inspiration of Bhutan’s timeless culture and traditions
                                 through
@@ -88,58 +88,56 @@
                                 </ul>
                             </div>
                         </div>
-                        {% include "itinerary.html"%}
+                        {% include "itinerary.html" %}
                     </div>
 
-                    <div class="enquiry-form shadow-xl">
-                        <div class="bg-white">
-                            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">
-                                    Price</h2>
-                                <form action="#" class="space-y-4">
-                                    <div>
-                                        <label for="fullname" class="block mb-2 text-sm font-medium text-gray-900">Full
-                                            Name</label>
-                                        <input type="text" id="fullname"
-                                               class="border border-gray-300 text-gray-900 outline-0 text-sm rounded block w-full p-2.5"
-                                               required/>
-                                    </div>
-                                    <div>
-                                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email
-                                            Address</label>
-                                        <input type="email" id="email"
-                                               class="border border-gray-300 text-gray-900 outline-0 text-sm rounded block w-full p-2.5"
-                                               required/>
-                                    </div>
-                                    <div>
-                                        <label for="message"
-                                               class="block mb-2 text-sm font-medium text-gray-900">Your Enquiry</label>
-                                        <textarea id="message" rows="6"
-                                                  class="block p-2.5 w-full text-sm text-gray-900 rounded-lg shadow-sm border border-gray-300 outline-0"></textarea>
-                                    </div>
+                    <div class="enquiry-form sticky bg-white shadow-xl w-[25%] rounded h-max top-[81px]">
+                        <div class="py-4 px-4">
+                            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">
+                                Price</h2>
+                            <form action="#" class="space-y-4">
+                                <div>
+                                    <label for="fullname" class="block mb-2 text-sm font-medium text-gray-900">Full
+                                        Name</label>
+                                    <input type="text" id="fullname"
+                                           class="border border-gray-300 text-gray-900 outline-0 text-sm rounded block w-full p-2.5"
+                                           required/>
+                                </div>
+                                <div>
+                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email
+                                        Address</label>
+                                    <input type="email" id="email"
+                                           class="border border-gray-300 text-gray-900 outline-0 text-sm rounded block w-full p-2.5"
+                                           required/>
+                                </div>
+                                <div>
+                                    <label for="message"
+                                           class="block mb-2 text-sm font-medium text-gray-900">Your Enquiry</label>
+                                    <textarea id="message" rows="6"
+                                              class="block p-2.5 w-full text-sm text-gray-900 rounded-lg shadow-sm border border-gray-300 outline-0"></textarea>
+                                </div>
 
-                                    <div class="flex items-start">
-                                        <div class="flex items-center h-5">
-                                            <input id="terms" aria-describedby="terms" type="checkbox"
-                                                   class="w-4 h-4 border border-gray-300 rounded bg-gray-50"
-                                                   required="">
-                                        </div>
-                                        <div class="ml-3 text-sm">
-                                            <label for="terms" class="font-light text-gray-400">I
-                                                accept the <a
-                                                        class="font-medium text-gray-600 hover:underline"
-                                                        href="#">Terms and Conditions</a> and <a
-                                                        class="font-medium text-gray-600 hover:underline"
-                                                        href="#">Privacy Policy</a></label>
-                                        </div>
+                                <div class="flex items-start">
+                                    <div class="flex items-center h-5">
+                                        <input id="terms" aria-describedby="terms" type="checkbox"
+                                               class="w-4 h-4 border border-gray-300 rounded bg-gray-50"
+                                               required="">
                                     </div>
+                                    <div class="ml-3 text-sm">
+                                        <label for="terms" class="font-light text-gray-400">I
+                                            accept the <a
+                                                    class="font-medium text-gray-600 hover:underline"
+                                                    href="#">Terms and Conditions</a> and <a
+                                                    class="font-medium text-gray-600 hover:underline"
+                                                    href="#">Privacy Policy</a></label>
+                                    </div>
+                                </div>
 
-                                    <button type="submit"
-                                            class="py-3 px-5 text-sm w-full font-medium text-center text-white rounded bg-orange-600 btn_effect">
-                                        SUBMIT ENQUIRY
-                                    </button>
-                                </form>
-                            </div>
+                                <button type="submit"
+                                        class="py-3 px-5 text-sm w-full font-medium text-center text-white rounded bg-orange-600 btn_effect">
+                                    SUBMIT ENQUIRY
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
