@@ -2,27 +2,26 @@
 
 <!DOCTYPE html>
 <html lang="en" class="text-[16px]">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon"/>
     <title>Little Bhutan</title>
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
 </head>
 <body>
-    {% include "header.html" %}
-    {% block content %}
+{% include "header.html" %}
+{% block content %}
 
-    {% endblock content %}
-    {% include "footer.html" %}
+{% endblock content %}
+{% include "footer.html" %}
 
-    <!-- Script Started -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="module" src="{% static 'js/index.js' %}"></script>
-    <!-- Script End -->
+<!-- Script Started -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="module" src="{% static 'js/index.js' %}"></script>
+<!-- Script End -->
 </body>
 </html>

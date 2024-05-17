@@ -1,3 +1,7 @@
+:root{
+    --border-radius:6px;
+}
+
 .inner_circle,
 .outer_circle{
     width: 400px;
@@ -85,4 +89,13 @@
     .hero{
         display: block;
     }
+}
+
+body .rounded{
+    border-radius: var(--border-radius);
+}
+
+body .rounded-t{
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
 }
