@@ -25,8 +25,8 @@
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto;
+    height: 50px;
+    margin-left: 425px;
 }
 
 .login-card .login-main {
@@ -37,6 +37,7 @@
     box-shadow: 0 0 37px rgba(8, 21, 66, 0.05);
     margin: 0 auto;
     background-color: #fff;
+    margin-left: 80%;
 }
 
 .login-card .login-main .theme-form h4 {
