@@ -14,8 +14,8 @@ const images = document.querySelectorAll(".mouse_flow");
 const container = document.querySelector(".hero-img-part");
 let isTransitioning = false;
 
-// Apply initial transition settings and event listeners to all images
-images.forEach(image => {
+if( container ){
+    images.forEach(image => {
     // image.style.transition = "transform 0.5s ease-out";
 
     image.addEventListener("mouseover", () => {
@@ -28,57 +28,61 @@ images.forEach(image => {
     });
 });
 
-container.addEventListener("mousemove", (e) => {
-    if (isTransitioning) return;
+    container.addEventListener("mousemove", (e) => {
+        if (isTransitioning) return;
 
-    isTransitioning = true;
+        isTransitioning = true;
 
-    const centerX = container.clientWidth / 2;
-    const centerY = container.clientHeight / 2;
+        const centerX = container.clientWidth / 2;
+        const centerY = container.clientHeight / 2;
 
-    images.forEach((image, index) => {
-        // Random offsets with limits
-        const maxOffset = 20;
-        const xOffset = (Math.random() - 0.5) * 2 * maxOffset;
-        const yOffset = (Math.random() - 0.5) * 2 * maxOffset;
+        images.forEach((image, index) => {
+            // Random offsets with limits
+            const maxOffset = 20;
+            const xOffset = (Math.random() - 0.5) * 2 * maxOffset;
+            const yOffset = (Math.random() - 0.5) * 2 * maxOffset;
 
-        // Calculate boundaries
-        const maxX = container.clientWidth - image.offsetWidth;
-        const maxY = container.clientHeight - image.offsetHeight;
-        const minX = 0;
-        const minY = 0;
+            // Calculate boundaries
+            const maxX = container.clientWidth - image.offsetWidth;
+            const maxY = container.clientHeight - image.offsetHeight;
+            const minX = 0;
+            const minY = 0;
 
-        // Constrain offsets to boundaries
-        const constrainedX = Math.max(minX, Math.min(maxX, xOffset));
-        const constrainedY = Math.max(minY, Math.min(maxY, yOffset));
+            // Constrain offsets to boundaries
+            const constrainedX = Math.max(minX, Math.min(maxX, xOffset));
+            const constrainedY = Math.max(minY, Math.min(maxY, yOffset));
 
-        setTimeout(() => {
-            if (!image.classList.contains("hovered")) {
-                image.style.transform = `translate(${constrainedX}px, ${constrainedY}px)`;
-            }
+            setTimeout(() => {
+                if (!image.classList.contains("hovered")) {
+                    image.style.transform = `translate(${constrainedX}px, ${constrainedY}px)`;
+                }
 
-            // Transition end listener
-            image.addEventListener("transitionend", () => {
-                isTransitioning = false;
-            }, { once: true });
-        }, index * 300);
+                // Transition end listener
+                image.addEventListener("transitionend", () => {
+                    isTransitioning = false;
+                }, { once: true });
+            }, index * 300);
+        });
+    });
+
+    container.addEventListener("mouseout", () => {
+        isTransitioning = false; // Allow new transitions when mouse leaves the container
+        images.forEach((image) => {
+            image.style.transform = "translate(0, 0)";
+        });
+    });
+}
+
+
+$('[data-accordion-target]').click(function () {
+    var target = $(this).data('accordion-target');
+    $(target).slideToggle();
+    $(this).find('svg').toggleClass('rotate-180');
+    $('[data-accordion-target]').not(this).each(function () {
+        var otherTarget = $(this).data('accordion-target');
+        if ($(otherTarget).is(':visible')) {
+            $(otherTarget).slideUp();
+            $(this).find('svg').addClass('rotate-180');
+        }
     });
 });
-
-container.addEventListener("mouseout", () => {
-    isTransitioning = false; // Allow new transitions when mouse leaves the container
-    images.forEach((image) => {
-        image.style.transform = "translate(0, 0)";
-    });
-});
-
-
-$(document).on("click",".cc",function(){
-    // e.preventDefault()
-    $(this).find(".detail").toggleClass("hidden block");
-});
-
-
-$(document).on("click",".cc",function(){
-    $(this).find(".detail").slideToggle(500);;
-})
