@@ -1,20 +1,25 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <section class="single-destination-page">
-        <div class="container mx-auto">
-            <h1 class="font-bold text-gray-900 text-3xl py-6">Bhutan: 5 days tour in Paro, Thimpu, and Punakha</h1>
-            <div class="destination-img grid grid-cols-2">
-                <div class="image1">
-                    <img src="{% static '' %}" alt=""/>
-                </div>
-                <div class="image2 gird grid-rows-2">
-                    <div class="image-2a"></div>
-                    <div class="image-2b"></div>
-                </div>
-            </div>
+  <section class="single-destination-page">
+    <div class="container mx-auto">
+      <h1 class="font-bold text-gray-900 text-3xl py-6">Bhutan: 5 days tour in Paro, Thimpu, and Punakha</h1>
+      <div class="destination-img grid grid-cols-3 gap-x-4">
+        <div class="image1 col-span-2 ">
+          <img src="{% static 'img/Paro-Dzong.jpg' %}" alt="paro" class=" w-full h-96 rounded-xl object-center"/>
+        </div>
+        <div class="image2 grid">
+          <div class="image-2a">
+            <img src="{% static "img/tiger.jpg" %}" alt="" class="w-full h-44 rounded-xl object-cover">
+          </div>
+          <div class="image-2b">
+            <img src="{% static "img/monastry.jpg" %}" alt="" class="w-full h-48 rounded-xl object-cover">
 
-            <div class="destination-details">
+          </div>
+        </div>
+      </div>
+
+            <div class="destination-details mt-6">
                 <h2 class="font-bold text-xl text-gray-900 pb-6 gap-4">Details</h2>
 
                 <div class="details-content grid grid-cols-3 gap-8">
@@ -83,6 +88,7 @@
                                 </ul>
                             </div>
                         </div>
+                        {% include "itinerary.html"%}
                     </div>
 
                     <div class="enquiry-form shadow-xl">
