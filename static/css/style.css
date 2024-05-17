@@ -172,3 +172,9 @@ body .btn_effect:hover:after{
     display: inline-block;
     color: rgb(234 88 12 / 1);
 }
+
+@media (min-width: 1536px) {
+    body .container {
+        max-width: 1280px;
+    }
+}
