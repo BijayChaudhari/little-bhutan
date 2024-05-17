@@ -1,79 +1,143 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-  <section class="single-destination-page">
-    <div class="container mx-auto">
-      <h1 class="font-bold text-gray-900 text-3xl py-6">Bhutan: 5 days tour in Paro, Thimpu, and Punakha</h1>
-      <div class="destination-img grid grid-cols-2">
-        <div class="image1">
-          <img src="{% static '' %}" alt="" />
+    <section class="single-destination-page">
+        <div class="container mx-auto">
+            <h1 class="font-bold text-gray-900 text-3xl py-6">Bhutan: 5 days tour in Paro, Thimpu, and Punakha</h1>
+            <div class="destination-img grid grid-cols-2">
+                <div class="image1">
+                    <img src="{% static '' %}" alt=""/>
+                </div>
+                <div class="image2 gird grid-rows-2">
+                    <div class="image-2a"></div>
+                    <div class="image-2b"></div>
+                </div>
+            </div>
+
+            <div class="destination-details">
+                <h2 class="font-bold text-xl text-gray-900 pb-6 gap-4">Details</h2>
+
+                <div class="details-content grid grid-cols-3 gap-8">
+                    <div class="single_contents col-span-2">
+                        <div class="main_content">
+                            <p>Experience the unbelievable inspiration of Bhutan’s timeless culture and traditions
+                                through
+                                visits to local farmhouses and ancient cultural sites. With our three-day tour, you’ll
+                                glimpse the everyday life of Bhutanese people and immerse yourself in the stunning
+                                natural
+                                surroundings. An opportunity to explore and discover the rich history and cultural
+                                significance of Bhutan, from its traditional farmhouses to the many historical monuments
+                                that dot the landscape. Join us on this unforgettable journey and discover the wonder
+                                and
+                                beauty of Bhutan.</p>
+                            <div class="highlights ">
+                                <p class="font-bold pt-6 pb-3">Tour Highlight</p>
+                                <ul class="ml-8 list-disc">
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, officia!
+                                    </li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, officia!
+                                    </li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, officia!
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="price-included">
+                                <p class="font-bold pt-6 pb-3 ">Price Included</p>
+                                <ul>
+                                    <li class="mb-1"><i class="fa-solid fa-circle-check text-green-500 me-1"></i> A
+                                        minimum of 3-star
+                                        accommodation (4 & 5 stars can be upgraded at an additional fee)
+                                    <li>
+                                    <li class="mb-1"><i class="fa-solid fa-circle-check text-green-500 me-1"></i> All
+                                        meals / Tea & snacks
+                                    </li>
+                                    <li class="mb-1"><i class="fa-solid fa-circle-check text-green-500 me-1"></i>
+                                        Sightseeing with entrance
+                                        fees
+                                    </li>
+                                    <li class="mb-1"><i class="fa-solid fa-circle-check text-green-500 me-1"></i> SDF
+                                        (Sustainable Development
+                                        Fees/Government Fees) & Visa Fees
+                                    </li>
+                                    <li class="mb-1"><i class="fa-solid fa-circle-check text-green-500 me-1"></i> All
+                                        internal transport
+                                        (excluding Domestic flights)
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="price-included">
+                                <p class="font-bold pt-6 pb-3">Price Excluded</p>
+                                <ul>
+                                    <li class="mb-1"><i class="fa-solid fa-circle-check text-red-500 me-1"></i>Flights
+                                    </li>
+                                    <li class="mb-1"><i class="fa-solid fa-circle-check text-red-500 me-1"></i>Travel &
+                                        Health Insurance
+                                    </li>
+                                    <li class="mb-1"><i class="fa-solid fa-circle-check text-red-500 me-1"></i>Additional
+                                        personal expenses
+                                        such as souvenirs, meals, snacks, alcohol, laundry, tips, and gratuities for the
+                                        tour leader and staff.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="enquiry-form shadow-xl">
+                        <div class="bg-white">
+                            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">
+                                    Price</h2>
+                                <form action="#" class="space-y-4">
+                                    <div>
+                                        <label for="fullname" class="block mb-2 text-sm font-medium text-gray-900">Full
+                                            Name</label>
+                                        <input type="text" id="fullname"
+                                               class="border border-gray-300 text-gray-900 outline-0 text-sm rounded block w-full p-2.5"
+                                               required/>
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email
+                                            Address</label>
+                                        <input type="email" id="email"
+                                               class="border border-gray-300 text-gray-900 outline-0 text-sm rounded block w-full p-2.5"
+                                               required/>
+                                    </div>
+                                    <div>
+                                        <label for="message"
+                                               class="block mb-2 text-sm font-medium text-gray-900">Your Enquiry</label>
+                                        <textarea id="message" rows="6"
+                                                  class="block p-2.5 w-full text-sm text-gray-900 rounded-lg shadow-sm border border-gray-300 outline-0"></textarea>
+                                    </div>
+
+                                    <div class="flex items-start">
+                                        <div class="flex items-center h-5">
+                                            <input id="terms" aria-describedby="terms" type="checkbox"
+                                                   class="w-4 h-4 border border-gray-300 rounded bg-gray-50"
+                                                   required="">
+                                        </div>
+                                        <div class="ml-3 text-sm">
+                                            <label for="terms" class="font-light text-gray-400">I
+                                                accept the <a
+                                                        class="font-medium text-gray-600 hover:underline"
+                                                        href="#">Terms and Conditions</a> and <a
+                                                        class="font-medium text-gray-600 hover:underline"
+                                                        href="#">Privacy Policy</a></label>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit"
+                                            class="py-3 px-5 text-sm w-full font-medium text-center text-white rounded bg-orange-600 btn_effect">
+                                        SUBMIT ENQUIRY
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="image2 gird grid-rows-2">
-          <div class="image-2a"></div>
-          <div class="image-2b"></div>
-        </div>
-      </div>
-
-      <div class="destination-details">
-        <h2 class="font-bold text-xl text-gray-900 pb-6">Details</h2>
-
-        <div class="details-content gird grid:col-2">
-          <div class="contents">
-            <p>Experience the unbelievable inspiration of Bhutan’s timeless culture and traditions through visits to local farmhouses and ancient cultural sites. With our three-day tour, you’ll glimpse the everyday life of Bhutanese people and immerse yourself in the stunning natural surroundings. An opportunity to explore and discover the rich history and cultural significance of Bhutan, from its traditional farmhouses to the many historical monuments that dot the landscape. Join us on this unforgettable journey and discover the wonder and beauty of Bhutan.</p>
-            <div class="highlights ">
-              <p class="font-bold pt-6 pb-3">Tour Highlight</p>
-              <ul class="ml-8 list-disc">
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, officia!</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, officia!</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, officia!</li>
-              </ul>
-            </div>
-
-            <div class="price-included">
-              <p class="font-bold pt-6 pb-3 ">Price Included</p>
-              <ul class="ml-5">
-                <li><i class="fa-solid fa-circle-check text-green-500"></i> A minimum of 3-star accommodation (4 & 5 stars can be upgraded at an additional fee)<li>
-                <li><i class="fa-solid fa-circle-check text-green-500"></i>  All meals / Tea & snacks</li>
-                <li><i class="fa-solid fa-circle-check text-green-500"></i>  Sightseeing with entrance fees</li>
-                <li><i class="fa-solid fa-circle-check text-green-500"></i>  SDF (Sustainable Development Fees/Government Fees) & Visa Fees</li>
-                <li><i class="fa-solid fa-circle-check text-green-500"></i>  All internal transport (excluding Domestic flights)</li>
-              </ul>
-            </div>
-
-            <div class="price-included">
-              <p class="font-bold pt-6 pb-3">Price Excluded</p>
-              <ul class="ml-5">
-                <li> <i class="fa-solid fa-circle-check text-red-500"></i>Flights</li>
-                <li> <i class="fa-solid fa-circle-check text-red-500"></i>Travel & Health Insurance</li>
-                <li><i class="fa-solid fa-circle-check text-red-500"></i>Additional personal expenses such as souvenirs, meals, snacks, alcohol, laundry, tips, and gratuities for the tour leader and staff.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="enquiry-form">
-            <div class="bg-white">
-              <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Send Us Enquiry</h2>
-                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
-                <form action="#" class="space-y-8">
-                  <div>
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
-                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required />
-                  </div>
-                  <div>
-                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
-                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
-                  </div>
-                  <div class="sm:col-span-2">
-                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-                  </div>
-                  <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 {% endblock %}
