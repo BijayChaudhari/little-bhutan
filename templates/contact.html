@@ -1,11 +1,36 @@
-{% extends "base.html" %}
-{% load static %}
-
+{% extends "base.html" %} {% load static %} {% block content %}
 <div class="contact-section">
-   <div class="grid grid-cols-2">
-    <div class="detail">how are you</div>
-    <div class="form">
-        <form action=""></form>
+  <div
+    class="bg-cover bg-center my-1 h-10vh"
+    style="background-image: url('{% static 'img/temple.png' %}')"
+  >
+    <h1 class="text-3xl p-10 text-white">Contact Us</h1>
+  </div>
+  <div class="container">
+    <div class="grid m-2 gap-2  border-slate-400 grid-cols-1 sm:grid-cols-2">
+      <div class="form p-2 m-2 border-slate-400 border-2 rounded-[4px]">
+        <form class="p-2 m-2" action="">
+            <h3 class="block text-2xl my-2 border-b-2">Sent us your quick message</h3>
+            <label for="Name" class="block text-xl ">Your Name:</label>
+            <input type="text" class="block w-[100%] border-2 rounded-md" />
+            <label for="email" class="block text-xl">Your Email</label>
+            <input type="email" class="block  w-[100%] border-2 rounded-md " />
+            <label for="phone" class="block text-xl">Your Phone No:</label>
+            <input type="phone" class="block  w-[100%] border-2 rounded-md" />
+            <label for="message" class="block text-xl">Message:</label>
+            <textarea name="message" id="" class="block  w-[100%] border-2 rounded-md"></textarea>
+            <div class="flex justify-center">
+                <button class="bg-orange-600 rouded text-xl m-2 p-2 text-center">Submit</button>
+            </div>
+          </form>
+      </div>
+      <div class="contact p-2 m-2 border-2 border-slate-400 rounded-[4px]">
+        <h3 class="text-2xl">Contact Details</h3>
+        <div class="map">
+            <iframe class="h-[200px] w-[570px] border-black p-2 mx-2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14124.88348462926!2d85.344622!3d27.7413327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bfac9183291%3A0xa0d797e00f59ad4b!2sKopan%20Monastery!5e0!3m2!1sen!2snp!4v1715945898371!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </div>
-   </div>
+  </div>
 </div>
+{% endblock content %}
