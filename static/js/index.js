@@ -7,4 +7,10 @@ $(document).on("click", "#hamburger", function(){
 $(document).on("click", "div[drawer-backdrop], button[data-drawer-hide]", function(){
     $(document).find("#drawer-example").toggleClass("-translate-x-full transform-none");
     $(document).find("div[drawer-backdrop]").remove();
-})
+});
+
+
+$(document).on("click",".cc",function(){
+    // e.preventDefault()
+    $(this).find(".detail").toggleClass("hidden block");
+});
