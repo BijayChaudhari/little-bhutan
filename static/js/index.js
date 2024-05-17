@@ -71,3 +71,14 @@ container.addEventListener("mouseout", () => {
         image.style.transform = "translate(0, 0)";
     });
 });
+
+
+$(document).on("click",".cc",function(){
+    // e.preventDefault()
+    $(this).find(".detail").toggleClass("hidden block");
+});
+
+
+$(document).on("click",".cc",function(){
+    $(this).find(".detail").slideToggle(500);;
+})
