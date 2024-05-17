@@ -27,7 +27,7 @@ class LoginView(View):
                 user = authenticate(request, username=username, password=password)
                 if user is not None:
                     login(request, user)
-                    return redirect('dashboard:index')
+                    return redirect('core:index')
                 else:
                     raise Exception("Invalid username or password")
         except Exception as e:
@@ -37,7 +37,7 @@ class LoginView(View):
 
     def get(self, request, *args, **kwargs):
         if request.user and request.user.is_authenticated:
-            return redirect('dashboard:index')
+            return redirect('core:index')
 
         form = LoginForm()
         return render(request, 'auth/login.html', {
