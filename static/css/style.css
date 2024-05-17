@@ -1,9 +1,9 @@
-:root{
-    --border-radius:6px;
+:root {
+    --border-radius: 6px;
 }
 
 .inner_circle,
-.outer_circle{
+.outer_circle {
     width: 400px;
     height: 400px;
     border: 1px solid #dec9c9;
@@ -12,64 +12,77 @@
     z-index: -1;
 }
 
-.outer_circle{
+.mouse_flow {
+    transition: 0.5s all;
+}
+
+.outer_circle {
     width: 450px;
     height: 450px;
     bottom: -188px;
     right: -102px;
 }
-.inner_circle{
+
+.inner_circle {
     bottom: -192px;
     right: -78px;
 }
 
 .orange_circle-one,
-.orange_circle-two{
-    width:15px;
-    height:15px;
-    background:orange;
+.orange_circle-two {
+    width: 15px;
+    height: 15px;
+    background: orange;
     border-radius: 100%;
 }
 
-.orange_circle-one{
+.orange_circle-one {
     top: -165px;
 }
 
-.orange_circle-two{
-    left: -279px;
+.orange_circle-two {
+    left: -325px;
     top: -147px;
-
 }
 
 .green_circle-one,
-.green_circle-two{
-    width:15px;
-    height:15px;
-    background:green;
-    border-radius: 100%;
+.green_circle-two {
+    width: 20px;
+    height: 20px;
+    background: green;
+    border-radius: 3px;
+    transform: rotate(45deg);
 }
 
-.green_circle-one{
-    top: -264px;
-    left: -87px;
+.green_circle-one {
+    top: -290px;
+    left: -175px;
 }
 
-.green_circle-two{
+.green_circle-two {
     top: -76px;
     left: 92px;
-
 }
 
-.emoji-design{
+/*.green_rectangle-two{*/
+/*    top: -76px;*/
+/*    left: 92px;*/
+/*    width: 15px;*/
+/*    height: 15px;*/
+/*    background: green;*/
+/*    border-radius: 3px;*/
+/*    transform: rotate(45deg);*/
+/*}*/
+
+.emoji-design {
     width: 40px;
     height: 40px;
     right: -40px;
-    top: -66px;
+    top: -20px;
     background: #fff;
-    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;
-    border-radius: 100%;
-    border-bottom-left-radius: 4px;
+    border-radius: 100% 100% 100% 4px;
 }
 
 .hamburger {
@@ -85,17 +98,64 @@
 .menu.open {
     display: block;
 }
-@media(max-width:760){
-    .hero{
+
+@media (max-width: 760px) {
+    .hero {
         display: block;
     }
 }
 
-body .rounded{
+body .rounded {
     border-radius: var(--border-radius);
 }
 
-body .rounded-t{
+body .rounded-t {
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
+}
+
+.image_circle {
+    clip-path: circle(100% at 50% 0);
+    -webkit-clip-path: circle(100% at 50% 0);
+}
+
+
+body .btn_effect {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border: 1px solid rgb(234 88 12 / 1);
+}
+
+body .btn_effect:hover{
+    padding-right: 30px !important;
+    background-color: transparent;
+    color: rgb(234 88 12 / 1);
+}
+
+body .btn_effect.btn_outline:hover{
+    padding-right: 30px !important;
+    background-color: rgb(234 88 12 / 1);
+    color: #fff;
+}
+
+body .btn_effect:after {
+    content: none;
+    font-family: "Font Awesome 6 Free", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    transition: all 0.2s linear 0s;
+    font-weight: 900;
+    /*background-color:rgb(255 153 83);*/
+}
+
+body .btn_effect:hover:after{
+    content: "\f054";
 }
