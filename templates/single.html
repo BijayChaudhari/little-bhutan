@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <section class="single-destination-page container mx-auto">
+    <section class="single-destination-page container mx-auto px-4 lg:px-0">
         <div class="flex" aria-label="Breadcrumb ">
             <ol class="inline-flex items-center space-x-1 pt-7">
               <li class="inline-flex items-center">
@@ -49,8 +49,8 @@
             <div class="destination-details mt-6">
                 <h2 class="font-bold text-xl text-gray-900 pb-6 gap-4">Details</h2>
 
-                <div class="details-content flex gap-8">
-                    <div class="single_contents w-[75%]">
+                <div class="details-content sm:flex gap-8">
+                    <div class="single_contents sm:w-[75%]">
                         <div class="main_content">
                             <p>Experience the unbelievable inspiration of Bhutan’s timeless culture and traditions
                                 through
@@ -118,7 +118,7 @@
                         {% include "itinerary.html" %}
                     </div>
 
-                    <div class="enquiry-form sticky bg-white shadow-xl w-[25%] rounded h-max top-[81px]">
+                    <div class="enquiry-form sm:sticky bg-white shadow-xl sm:w-[25%] rounded h-max sm:top-[81px] mt-10 sm:mt-0">
                         <div class="py-4 px-4">
                             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">
                                 Price: $200</h2>
