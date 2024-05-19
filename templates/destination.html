@@ -25,7 +25,7 @@
       
     <h1 class="font-bold text-2xl py-7 ">Top Destination</h1>
     <div class="top-part container mx-auto">
-        <div class="featured-hotels grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="featured-hotels grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
             <a  href ="{% url 'core:single' slug='six-senses-thimpu' %}" class="hotel bg-white shadow rounded hover:cursor-pointer hover:drop-shadow-lg ease-in-out duration-300 transition-all pb-4">
                 <img src="{% static "img/Paro-Drugyel-Dzong.jpg" %}" alt="hotel1" class="w-full rounded-t h-60" />
@@ -100,6 +100,34 @@
                 <p class="px-3 pb-3 text-gray-600 text-sm">Start from <span
                     class="font-bold text-gray-900">US$ 50</span></p>
             </a>
+        </div>
+
+        <div class="text-center mt-10">
+            <nav aria-label="Page navigation example">
+                <ul class="inline-flex -space-x-px text-base h-10">
+                  <li>
+                    <a href="#" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 ">Previous</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 ">1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 ">2</a>
+                  </li>
+                  <li>
+                    <a href="#" aria-current="page" class="flex items-center justify-center px-4 h-10 text-orange-600 border border-gray-300 bg-orange-50 hover:bg-orange-100 hover:text-orange-700 ">3</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 ">4</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 ">5</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 ">Next</a>
+                  </li>
+                </ul>
+              </nav>
         </div>
     </div>  
 </div>
