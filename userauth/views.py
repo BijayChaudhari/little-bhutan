@@ -1,17 +1,12 @@
-# Create your views here.
 from django.shortcuts import render, redirect, HttpResponse
 from django.views.generic import View
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
-from userauth.forms import (
-    LoginForm,
-    RegisterForm
-)
-from userauth.models import User
+from userauth.models import User  # Ensure this import is correct and used consistently
+
+from userauth.forms import LoginForm, RegisterForm
 from userauth.utils import send_verification_link
 
-# Create your views here.
 class LoginView(View):
     def post(self, request, *args, **kwargs):
         form = LoginForm(request.POST)
@@ -34,19 +29,15 @@ class LoginView(View):
             form.add_error('username', str(e))
         return render(request, 'auth/login.html', {'form': form})
 
-
     def get(self, request, *args, **kwargs):
         if request.user and request.user.is_authenticated:
             return redirect('core:index')
 
         form = LoginForm()
-        return render(request, 'auth/login.html', {
-            'form' : form
-        })
-    
+        return render(request, 'auth/login.html', {'form': form})
 
 class RegisterView(View):
-    def generate_username(self, email:str) -> str:
+    def generate_username(self, email: str) -> str:
         base_username = email.split('@')[0]
         unique_username = base_username
         counter = 1
@@ -57,7 +48,6 @@ class RegisterView(View):
             counter += 1
 
         return unique_username
-
 
     def post(self, request, *args, **kwargs):
         form = RegisterForm(request.POST)
@@ -71,22 +61,16 @@ class RegisterView(View):
 
                 if not first_name:
                     raise Exception("First Name is required")
-
                 if not last_name:
-                    raise Exception("First Name is required")
-
+                    raise Exception("Last Name is required")
                 if not email:
                     raise Exception("Email is required")
-
                 if not password:
                     raise Exception("Password is required")
-
                 if not cpassword:
                     raise Exception("Confirm Password is required")
-
                 if password != cpassword:
-                    raise Exception("Password and Confirm password doesn't match")
-
+                    raise Exception("Password and Confirm password don't match")
                 if User.objects.filter(email=email).exists():
                     raise Exception("Email already exists")
 
@@ -113,60 +97,22 @@ class RegisterView(View):
         except Exception as e:
             form.add_error('username', str(e))
 
-        return render(request, 'auth/register.html', {
-            'form' : form
-        })
-    
+        return render(request, 'auth/register.html', {'form': form})
+
     def get(self, request, *args, **kwargs):
         if request.user and request.user.is_authenticated:
             return redirect('dashboard:index')
-        
+
         form = RegisterForm()
-        return render(request, 'auth/register.html', {
-            'form' : form
-        })
-    
+        return render(request, 'auth/register.html', {'form': form})
 
 class ForgetPassView(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'auth/forget-password.html')
-    
 
 class ResetPasswordView(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'auth/reset-password.html')
-
-# class VerifyEmailCodeView(View):
-#     def get(self, request, *args, **kwargs):
-#         try:
-#             verifycode = kwargs.get("code")
-#             email = request.COOKIES.get('verify_email')
-
-#             if not verifycode or not email:
-#                 raise Exception("Invalid verification code")
-            
-#             user = User.objects.get(email=email)
-        #     usermeta = UserMeta.objects.get(user=user, meta_key="verification_code", meta_value=verifycode)
-
-        #     # Once verified, activate the user and delete the verification code
-        #     user.is_active = True
-        #     user.save()
-        #     usermeta.delete()
-            
-        #     messages.success(request, "Email verified successfully")
-        #     response = redirect('userauth:login')
-        #     response.delete_cookie("verify_email")
-        #     return response
-        
-        # except User.DoesNotExist:
-        #     messages.error(request, "User does not exist")
-        # # except UserMeta.DoesNotExist:
-        # #     messages.error(request, "Invalid verification code")
-        # except Exception as e:
-        #     messages.error(request, str(e))
-
-        # return redirect("userauth:login")
-
 
 class VerifyEmailView(View):
     def get(self, request, *args, **kwargs):
@@ -174,10 +120,8 @@ class VerifyEmailView(View):
         if not email:
             return redirect('userauth:login')
 
-        return render(request, 'auth/verify-email.html', context={
-            "email" : email
-        })
-    
+        return render(request, 'auth/verify-email.html', context={"email": email})
+
     def post(self, request, *args, **kwargs):
         email = request.COOKIES.get('verify_email')
         sent = send_verification_link(email)
@@ -187,8 +131,7 @@ class VerifyEmailView(View):
         else:
             messages.error(request, "Failed to send verification link")
         return redirect("userauth:verify-email")
-    
-     
+
 class LogoutView(View):
     def get(self, request, *args, **kwargs):
         logout(request)

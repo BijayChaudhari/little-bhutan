@@ -18,6 +18,7 @@ class User(AbstractUser):
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ['username']
 
+
     def save(self, *args, **kwargs):
         # If username is not provided, generate it from email
         if not self.username and self.email:
