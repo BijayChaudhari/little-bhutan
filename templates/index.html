@@ -19,13 +19,13 @@
         </div>
         <div class=" hero-btns flex space-x-10 mt-12">
             <div class="hero-btns-one">
-                <a class="bg-orange-500 rounded-2xl px-4 py-2 text-white drop-shadow-2xl" href="#">Go Exploration</a>
+                <a class="bg-orange-500 rounded px-4 py-2 text-white drop-shadow-2xl" href="#">Go Exploration</a>
             </div>
             <div class="hero-button-two"><a class="text-gray-800" href="#">Get a Price</a></div>
         </div>
     </div>
     <div class="hero-img-part flex justify-center items-center relativ mt-40 sm:mt-0">
-        <img src="{% static "img/girl.png" %}" alt="" class=" girl-photo h-auto max-w-60">
+        <img src="{% static "img/bhutanese-girl.png" %}" class=" girl-photo h-auto max-w-48" alt="Girl Image">
         <div class="relative">
             <div class="circle-design absolute ">
                 <div class="inner_circle absolute"></div>
@@ -41,13 +41,13 @@
             </div>
 
 
-            <div class="quotation bg-white drop-shadow-2xl border rounded-2xl absolute z-10 bottom-[-140px] right-60 hidden sm:block">
+            <div class="quotation bg-white drop-shadow-2xl border rounded absolute z-10 bottom-[-140px] right-60 hidden sm:block">
                 <div class="p-5 flex items-center relative justify-center align-center ">
                     <div class="quotion-img">
                         <img src="{% static "img/logo.png" %}" alt=""
                             class="max-w-8 mr-3 absolute bg-white border-2 border-green-700 rounded-full p-1 top-[-13px]">
                     </div>
-                    <div class="text-gray-600 text-xs w-48 hidden sm:block">
+                    <div class="text-gray-600 text-xs w-48 hidden sm:block mt-3">
                         <h1>Bhutan is very amazing, I enjoyed my honeymoon here</h1>
                         <p class="mt-2">Fatima💝</p>
                     </div>
@@ -61,20 +61,20 @@
 {% comment %} card section starts here {% endcomment %}
 <section class=" temple-cards container items-center lg:grid lg:grid-cols-2 mx-auto px-4 mt-20 gap-12">
     <div class="sm:grid sm:grid-cols-2 gap-8">
-        <div class="card-one rounded-2xl hidden sm:block relative mb-16 sm:mb-0">
-            <img src="{% static "img/buddha.jpg" %}" alt="buddha" class="w-full h-96  rounded-2xl">
-            <div class="card-text bg-white m-auto py-4 pl-3 pr-32 absolute -bottom-12 left-5 rounded-2xl w-[90%] shadow">
+        <div class="card-one rounded hidden sm:block relative mb-16 sm:mb-0">
+            <img src="{% static "img/buddha.jpg" %}" alt="buddha" class="w-full h-80 object-cover  rounded">
+            <div class="card-text bg-white m-auto py-4 pl-3 pr-32 absolute -bottom-12 left-5 rounded w-[90%] shadow">
                 <p class="text-gray-600 text-sm">Google Rating:</p>
                 <h2 class="font-bold ">Buddha Stupa</h2>
-                <h2 class="text-gray-600 -mt-0"><span class=" text-orange-600">&#9733;</span>5.0 Ratings</h2>
+                <h2 class="text-gray-600 -mt-0"><span class=" text-orange-600 me-1">&#9733;</span>5.0 Ratings</h2>
             </div>
         </div>
-        <div class="card-two rounded-2xl hidden sm:block relative mb-16 sm:mb-0">
-            <img src="{% static "img/buddha.jpg" %}" alt="buddha" class="w-full h-96  rounded-2xl">
-            <div class="card-text bg-white py-4 pl-3 pr-32 absolute -bottom-12 left-5 rounded-2xl w-[90%] shadow">
+        <div class="card-two rounded hidden sm:block relative mb-16 sm:mb-0">
+            <img src="{% static "img/temple.png" %}" alt="buddha" class="w-full h-80 object-cover  rounded">
+            <div class="card-text bg-white py-4 pl-3 pr-32 absolute -bottom-12 left-5 rounded w-[90%] shadow">
                 <p class="text-gray-600 text-sm">Google Rating:</p>
-                <h2 class="font-bold ">Buddha Stupa</h2>
-                <h2 class="text-gray-600 -mt-0"><span class=" text-orange-600">&#9733;</span>5.0 Ratings</h2>
+                <h2 class="font-bold ">South Monastry</h2>
+                <h2 class="text-gray-600 -mt-0"><span class=" text-orange-600 me-1">&#9733;</span>5.0 Ratings</h2>
             </div>
         </div>
     </div>
@@ -84,7 +84,7 @@
             optio inventore quas laboriosam ex molestias provident Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Veniam fugiat ipsam earum excepturi fuga, similique qui! Nobis ratione modi, incidunt aperiam et
             voluptatem veniam doloremque sit nisi quia ad quos?</p>
-        <div class="numbers flex gap-12 mt-6 sm:mt-12 lg:mt-20">
+        <div class="numbers flex gap-12 mt-4 sm:mt-8 lg:mt-12">
             <div class="destination">
                 <h1 class="text-orange-600 text-3xl font-bold">50+</h1>
                 <p class="text-sm text-gray-600">Destination</p>
@@ -99,133 +99,114 @@
             </div>
         </div>
         <button type="button"
-        class="text-white bg-orange-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg mt-10 text-sm px-4 py-2 text-center">
+        class="text-white bg-orange-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded mt-10 text-sm px-4 py-2 text-center">
         Find More..
       </button>
     </div>
 </section>
-{% comment %} card section ends here {% endcomment %}
 
-{% comment %} freatured properties section strats here {% endcomment %}
-<section class="features container mx-auto mt-24 ">
-    <h1 class="font-bold text-3xl text-gray-900 text-left">Top Deals</h1>
-    <div class="container mx-auto pb-14 pt-7 rounded-2xl">
-    <div class="featured-cities flex flex-wrap gap-4 mb-10">
-        <h1 class="text-white py-1 px-3 shadow rounded-2xl bg-gray-900">Thimphu</h1>
-        <h1 class="text-gray-900 py-1 px-3 shadow hover:cursor-pointer hover:drop-shadow-lg transition-all bg-white hover:bg-gray-700 hover:text-white rounded-2xl">Baga</h1>
-        <h1 class="text-gray-900 py-1 px-3 shadow hover:cursor-pointer hover:drop-shadow-lg transition-all bg-white hover:bg-gray-700 hover:text-white rounded-2xl">Mongar</h1>
-        <h1 class="text-gray-900 py-1 px-3 shadow hover:cursor-pointer hover:drop-shadow-lg transition-all bg-white hover:bg-gray-700 hover:text-white rounded-2xl">Tongsa</h1>
-        <h1 class="text-gray-900 py-1 px-3 shadow hover:cursor-pointer hover:drop-shadow-lg transition-all bg-white hover:bg-gray-700 hover:text-white rounded-2xl">Damphu</h1>
-    </div>
-    <div class="featured-hotels grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 gap-8">
-        <div class="hotel bg-white shadow rounded-2xl  ">
-            <img src="{% static "img/hotel1.jpg" %}" alt="hotel1" class="h-auto  rounded-t-2xl">
-            <h1 class="font-bold p-3">Six Senses Thimphu - FREE Airport Shuttle 
-            <h2 class="p-3 text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 50
-                </span>
-                <h2>
+<section class="features container mx-auto mt-24 px-4 sm:px-0">
+    <h1 class="font-bold text-3xl text-gray-900 text-left">Top Destination</h1>
+    <div class="container mx-auto pb-14 pt-7 rounded">
+        <div class="featured-cities flex flex-wrap gap-4 mb-10 list-none">
+            <li class="text-white py-1 px-3 shadow rounded bg-gray-900">Thimpu</li>
+            <li class="text-gray-900 py-1 px-3 shadow hover:cursor-pointer hover:drop-shadow-lg ease-in-out duration-300 transition-all bg-white hover:bg-gray-700 hover:text-white rounded">Baga</li>
+            <li class="text-gray-900 py-1 px-3 shadow hover:cursor-pointer hover:drop-shadow-lg ease-in-out duration-300 transition-all bg-white hover:bg-gray-700 hover:text-white rounded">Mongar</li>
+            <li class="text-gray-900 py-1 px-3 shadow hover:cursor-pointer hover:drop-shadow-lg ease-in-out duration-300 transition-all bg-white hover:bg-gray-700 hover:text-white rounded">Tongsa</li>
+            <li class="text-gray-900 py-1 px-3 shadow hover:cursor-pointer hover:drop-shadow-lg ease-in-out duration-300 transition-all bg-white hover:bg-gray-700 hover:text-white rounded">Damphu</li>
         </div>
-        <div class="hotel bg-white shadow rounded-2xl ">
-            <img src="{% static "img/hotel2.jpg" %}" alt="hotel2" class="h-auto  rounded-t-2xl">
-            <h1 class="font-bold p-3">Como Uma Paro - FREE Airport Shuttle 
-            <h2 class="p-3 text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 51
-                </span>
-            </h2>
-        </div>
-        <div class="hotel bg-white shadow rounded-2xl ">
-            <img src="{% static "img/hotel3.jpg" %}" alt="hotel3" class="h-auto  rounded-t-2xl">
-            <h1 class="font-bold p-3">Amankora Paro Lodge - FREE Airport Shuttle 
-               <!-- <span
-                    class=" text-orange-600">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h1>
-            <h2 class="px-3 text-gray-900 text-sm"><span class="text-white bg-blue-950 p-1 rounded ">4.5/5</span> 392
-                Reviews</h2>
-                -->
-            <h2 class="p-3 text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 52
-                </span>
-            </h2>
-        </div>
-        <div class="hotel bg-white shadow rounded-2xl ">
-            <img src="{% static "img/hotel3.jpg" %}" alt="hotel3" class="h-auto  rounded-t-2xl">
-            <h1 class="font-bold p-3">Amankora Paro Lodge - FREE Airport Shuttle </h1>
-            <h2 class="p-3 text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 52
-                </span>
-            </h2>
+        <div class="featured-hotels grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 gap-8">
+            <div class="hotel bg-white shadow rounded hover:cursor-pointer hover:drop-shadow-lg ease-in-out duration-300 transition-all ">
+                <img src="{% static "img/hotel1.jpg" %}" alt="hotel1" class="h-auto  rounded-t" />
+                <h1 class="font-bold p-3">Six Senses Thimphu - FREE Airport Shuttle</h1>
+                <h2 class="px-3 pb-4 sm:pb-0 text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 50</span></h2>
+            </div>
+            <div class="hotel bg-white shadow rounded hover:cursor-pointer hover:drop-shadow-lg ease-in-out duration-300 transition-all">
+                <img src="{% static "img/hotel2.jpg" %}" alt="hotel2" class="h-auto  rounded-t" />
+                <h1 class="font-bold p-3">Como Uma Paro - FREE Airport Shuttle</h1>
+                <h2 class="px-3 pb-4 sm:pb-0 text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 51</span></h2>
+            </div>
+            <div class="hotel bg-white shadow rounded hover:cursor-pointer hover:drop-shadow-lg ease-in-out duration-300 transition-all ">
+                <img src="{% static "img/hotel3.jpg" %}" alt="hotel3" class="h-auto  rounded-t" />
+                <h1 class="font-bold p-3">Amankora Paro Lodge - FREE Airport Shuttle</h1>
+                <h2 class="px-3 pb-4 sm:pb-0 text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 52</span></h2>
+            </div>
+            <div class="hotel bg-white shadow rounded hover:cursor-pointer hover:drop-shadow-lg ease-in-out duration-300 transition-all ">
+
+                <img src="{% static "img/hotel3.jpg" %}" alt="hotel3" class="h-auto  rounded-t" />
+                <h1 class="font-bold p-3">Amankora Paro Lodge - FREE Airport Shuttle </h1>
+                <h2 class="px-3 pb-4 sm:pb-0 text-gray-600 text-sm">Start from <span class="font-bold text-gray-900">US$ 52</span></h2>
+            </div>
         </div>
     </div>
 </section>
 
-{% comment %} freatured properties ended here {% endcomment %}
-
-{% comment %} featured post section strats here {% endcomment %}
-<section class="container mx-auto mt-16">
-    <h1 class="font-bold text-3xl text-gray-900 my-11 text-left">Recent Blogs</h1>
-    <div class="sm:grid sm:grid-cols-3 lg:grid-cols-4 gap-4">
-        <div class="mb-4 mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+<section class="container mx-auto mt-6 px-4 sm:px-0">
+    <h1 class="font-bold text-3xl text-gray-900 mb-6 text-left">Recent Blogs</h1>
+    <div class="sm:grid sm:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div class="mb-4 mx-auto lg:max-w-sm bg-white border border-gray-200 rounded shadow hover:drop-shadow-lg transition-all ease-in-out duration-300">
             <a href="#">
-                <img class="rounded-t-lg" src="{% static "img/buddha.jpg" %}" alt="" />
+                <img class="rounded-t h-60 object-cover w-full" src="{% static "img/bhutan-village.jpg" %}" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                        technology acquisitions 2021</h5>
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-800 ">20% increase in tourist arrival this month</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise technology
                     acquisitions of 2021 so far, in reverse chronological order.</p>
                 <a href="#"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Read more<span>&#8594;</span>
-                </a>
-            </div>
-        </div>
-        <div class="mb-4 mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
-            <a href="#">
-                <img class="rounded-t-lg" src="{% static "img/buddha.jpg" %}" alt="" />
-            </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                        technology acquisitions 2021</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                    acquisitions of 2021 so far, in reverse chronological order.</p>
-                <a href="#"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Read more<span>&#8594;</span>
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded">
+                    Read more <span>&#8594;</span>
                 </a>
             </div>
         </div>
 
-        <div class="mb-4 mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+        <div class="mb-4 mx-auto lg:max-w-sm bg-white border border-gray-200 rounded shadow hover:drop-shadow-lg transition-all ease-in-out duration-300">
             <a href="#">
-                <img class="rounded-t-lg" src="{% static "img/temple.png" %}" alt="" />
+                <img class="rounded-t h-60 object-cover w-full" src="{% static "img/ccc-monastry.jpg" %}" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                        technology acquisitions 2021</h5>
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Bhutan to implement the 24hrs open to Buddha Park</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise technology
                     acquisitions of 2021 so far, in reverse chronological order.</p>
                 <a href="#"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded">
                     Read more<span>&#8594;</span>
                 </a>
             </div>
         </div>
 
-        <div class="mb-4 mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+        <div class="mb-4 mx-auto lg:max-w-sm bg-white border border-gray-200 rounded shadow hover:drop-shadow-lg transition-all ease-in-out duration-300">
             <a href="#">
-                <img class="rounded-t-lg" src="{% static "img/buddha.jpg" %}" alt="" />
+                <img class="rounded-t h-60 object-cover w-full" src="{% static "img/hotel2.jpg" %}" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
-                        technology acquisitions 2021</h5>
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Hotel rooms get packed once the show fall</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise technology
                     acquisitions of 2021 so far, in reverse chronological order.</p>
                 <a href="#"
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded">
+                    Read more<span>&#8594;</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="mb-4 mx-auto lg:max-w-sm bg-white border border-gray-200 rounded shadow  hover:drop-shadow-lg transition-all ease-in-out duration-300">
+            <a href="#">
+                <img class="rounded-t h-60 object-cover w-full" src="{% static "img/buddha.jpg" %}" alt="Buddha"  />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Authorities requested visitors to keep themselves warm during cold</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise technology
+                    acquisitions of 2021 so far, in reverse chronological order.</p>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded">
                     Read more<span>&#8594;</span>
                 </a>
             </div>

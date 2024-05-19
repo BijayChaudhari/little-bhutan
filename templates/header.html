@@ -1,80 +1,87 @@
 {% load static %}
 
-<nav class="sticky container mx-auto z-20 top-0  border-b border-gray-200 bg-white">
-  <div class="flex flex-wrap items-center justify-between p-4">
-    <a href="" class="flex items-center space-x-3">
-      <img src="{% static 'img/logo.png' %}" class="h-10" alt="LittleBhutan Logo" />
-      <span class="self-center text-2xl font-bold text-gray-900">Little Bhutan</span>
-    </a>
-    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <button type="button"
-        class="text-white bg-orange-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
-        Register
-      </button>
-      <button data-collapse-toggle="navbar-sticky" type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden"
-        aria-controls="navbar-sticky" aria-expanded="false" id="hamburger">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15" />
-        </svg>
-      </button>
+<nav class="sticky z-20 top-0  border-b border-gray-200 bg-white">
+    <div class="container mx-auto flex flex-wrap items-center justify-between py-5 px-4 sm:px-0">
+        <a href="" class="flex items-center space-x-3">
+            <img src="{% static 'img/logo.png' %}" class="h-10" alt="LittleBhutan Logo"/>
+            <span class="self-center text-2xl font-bold text-gray-900">Little Bhutan</span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="text-white bg-orange-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 transition-all font-medium rounded text-sm px-4 py-2 text-center">
+                Register
+            </button>
+            <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden"
+                    aria-controls="navbar-sticky" aria-expanded="false" id="hamburger">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                     viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+        <div id="menu" class="items-center  justify-between hidden w-full md:flex md:w-auto md:order-1"
+             id="navbar-sticky">
+            <ul class="flex gap-10 text-gray-600 ">
+                <div>
+                    <a href="#">Home</a>
+                </div>
+                <div>
+                    <a href="#">Blog</a>
+                </div>
+                <div>
+                    <a href="#">Destination</a>
+                </div>
+                <div>
+                    <a href="#">Contact Us</a>
+                </div>
+            </ul>
+        </div>
     </div>
-    <div id="menu" class="items-center  justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex gap-10 text-gray-600 ">
-        <div>
-          <a href="#">Home</a>
-        </div>
-        <div>
-          <a href="#">Blog</a>
-        </div>
-        <div>
-          <a href="#">Destination</a>
-        </div>
-        <div>
-          <a href="#">Contact Us</a>
-        </div>
-      </ul>
-    </div>
-  </div>
 </nav>
-
 
 <!-- drawer component -->
 <div id="drawer-example"
-  class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800"
-  tabindex="-1" aria-labelledby="drawer-label">
-  <h5 id="drawer-label" class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">
-    Menu</h5>
-    <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
-      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-      </svg>
-      <span class="sr-only">Close menu</span>
-   </button>
+     class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800"
+     tabindex="-1" aria-labelledby="drawer-label">
+    <h5 id="drawer-label"
+        class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">
+        Menu</h5>
+    <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+        <span class="sr-only">Close menu</span>
+    </button>
     <div class="py-4 overflow-y-auto">
-      <ul class="space-y-2 font-medium">
-         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-               <span class="ms-3">Home</span>
-            </a>
-         </li>
-         <li>
-          <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-             <span class="ms-3">Blogs</span>
-          </a>
-       </li>
-       <li>
-        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-           <span class="ms-3">Destination</span>
-        </a>
-     </li>
-     <li>
-      <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-         <span class="ms-3">Contact Us</span>
-      </a>
-   </li>
-      </ul>
-   </div>
+        <ul class="space-y-2 font-medium">
+            <li>
+                <a href="#"
+                   class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <span class="ms-3">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#"
+                   class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <span class="ms-3">Blogs</span>
+                </a>
+            </li>
+            <li>
+                <a href="#"
+                   class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <span class="ms-3">Destination</span>
+                </a>
+            </li>
+            <li>
+                <a href="#"
+                   class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <span class="ms-3">Contact Us</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>

@@ -9,4 +9,6 @@ def contact(request):
     return render(request,'contact.html')
 def blogs(request):
     return render(request,'blogs.html')
+def destinations(request):
+    return render(request,'destination.html')
 
