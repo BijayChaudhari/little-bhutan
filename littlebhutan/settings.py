@@ -30,6 +30,7 @@ INSTALLED_APPS = [
 
     #third party app
     'userauth',
+    'bookings',
 ]
 
 MIDDLEWARE = [
