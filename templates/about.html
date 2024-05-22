@@ -1,77 +1,81 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-
-<body class="bg-gray-100">
     <div class="container mx-auto px-4">
-      <div class="text-center py-10">
-        <h1 class="text-5xl font-bold">About Us</h1>
-        <p class="text-xl mt-3">For explorers everywhere.</p>
-      </div>
-      <div class="flex flex-wrap items-center">
-        <div class="w-full md:w-1/2">
-          <img src="{% static "img/buddha.jpg" %}" alt="Bhutan" class="w-full rounded-lg shadow-md p-3">
+        <div class="text-center py-20">
+            <h1 class="text-5xl font-bold">About Us</h1>
+            <p class="text-xl mt-3">The Story About Us</p>
         </div>
-        <div class="w-1/2 p-4">
-            <h2 class="text-3xl font-semibold text-center p-3">The Story About Us</h2>
-            <p class="text-gray-800 p-3">Escape the great mundane routine and dive into the unique cultures and stunning landscapes. Let us take you through your exciting adventure to discover the hidden treasures in little Bhutan.
-
-            </p>
-            <div class="flex items-center mb-4 p-3">
-              <span class="text-green-500 text-xl mr-2">✔</span>
-              <div>
-                <div class="font-semibold mb-1 ">Book With Confident
-                </div>
-                <p>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel website.</p>
-              </div>
+        <div class="block lg:flex items-center">
+            <div class="p-3">
+                <img src="{% static "img/buddha.jpg" %}" alt="Bhutan" class="w-full rounded">
             </div>
+            <div class="p-3">
+                <p class="text-gray-800 p-3">Escape the great mundane routine and dive into the unique cultures and
+                    stunning landscapes. Let us take you through your exciting adventure to discover the hidden
+                    treasures in little Bhutan.
 
-           <div class="flex items-center mb-4 p-3">
-              <span class="text-green-500 text-xl mr-2">✔</span>
-              <div>
-                <div class="font-semibold mb-1">Freedom to discover and explore</div>
-                <p>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel website.</p>
-              </div>
+                </p>
+                <div class="flex items-center mb-4 p-3">
+                    <span class="text-green-500 text-xl mr-2">✔</span>
+                    <div>
+                        <div class="font-semibold mb-1 ">Book With Confident
+                        </div>
+                        <p>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel
+                            website.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center mb-4 p-3">
+                    <span class="text-green-500 text-xl mr-2">✔</span>
+                    <div>
+                        <div class="font-semibold mb-1">Freedom to discover and explore</div>
+                        <p>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel
+                            website.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center mb-4 p-3">
+                    <span class="text-green-500 text-xl mr-2">✔</span>
+                    <div>
+                        <div class="font-semibold mb-1">Dive into Culture
+                        </div>
+                        <p>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel
+                            website.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center mb-4 p-3">
+                    <span class="text-green-500 text-xl mr-2">✔</span>
+                    <div>
+                        <div class="font-semibold mb-1">Trustworthyness in every Sector</div>
+                        <p>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel
+                            website.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center mb-4 p-3">
+                    <span class="text-green-500 text-xl mr-2">✔</span>
+                    <div>
+                        <div class="font-semibold mb-1">TripAdvisor Multiple Award winning company</div>
+                        <p>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel
+                            website.</p>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="flex items-center mb-4 p-3">
-                <span class="text-green-500 text-xl mr-2">✔</span>
-                <div>
-                  <div class="font-semibold mb-1">Dive into Culture
-                </div>
-                  <p>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel website.</p>
-                </div>
-              </div>
-
-              <div class="flex items-center mb-4 p-3">
-                <span class="text-green-500 text-xl mr-2">✔</span>
-                <div>
-                  <div class="font-semibold mb-1">Trustworthyness in every Sector</div>
-                  <p>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel website.</p>
-                </div>
-              </div>
-
-              <div class="flex items-center mb-4 p-3">
-                <span class="text-green-500 text-xl mr-2">✔</span>
-                <div>
-                  <div class="font-semibold mb-1">TripAdvisor Multiple Award winning company</div>
-                  <p>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel website.</p>
-                </div>
-              </div>
-          
         </div>
-        <div class="bg-cover bg-center bg-no-repeat relative" style="background-image: url('/static/img/tiger.jpg');">
-            <div class="bg-black bg-opacity-50 py-20">
-              <div class="container mx-auto text-center text-white">
-                <h1 class="text-4xl font-bold mb-4">Get Ready</h1>
-                <p class="text-xl mb-6">Every month we receive many applications from people keen to work with Little Bhutan. It's fantastic to hear from so many inspiring creatives, and we're keen to work with a diverse travel community.</p>
-                <button class="bg-green-500 text-white px-6 py-3 rounded-full">Become a Contributor</button>
-              </div>
+
+        <div class="bg-cover bg-center rounded bg-no-repeat relative mt-12"
+             style="background-image: linear-gradient(to bottom, rgba(234, 88, 12, 0.5), transparent),
+    url('/static/img/tiger.jpg');">
+            <div class="bg-black bg-opacity-50 py-20 rounded">
+                <div class="container mx-auto text-center text-white max-w-[550px]">
+                    <h1 class="text-4xl font-bold mb-4">Explore Places</h1>
+                    <p class="text-xl mb-6">Escape the great mundane routine and dive into the unique cultures and stunning landscapes. </p>
+                    <button class="bg-orange-600 btn_effect text-white px-6 py-3 rounded">Explore Destinations</button>
+                </div>
             </div>
-          </div>
-      </div>
+        </div>
     </div>
-    </body>
-
-
 {% endblock content %}

@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-xxlbp*meyskfby=r6ye0t8&=14be$^km^g_*%rrsodxpi5(q+o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     #third party app
     'userauth',
      'core',
+    'bookings'
 ]
 
 MIDDLEWARE = [
